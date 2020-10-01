@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('regions','LokasiController@index');
+Route::get('shrimp_prices','HargaController@index');
+Route::get('shrimp_prices/{id}','HargaController@detail');
